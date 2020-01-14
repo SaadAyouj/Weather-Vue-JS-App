@@ -1,6 +1,7 @@
 <template>
   <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 15 ? 'warm' : '' ">
     <main>
+    <h2>Made By Saad Ayouj</h2>
       <div class="search-box">
         <input type="text" 
         class="search-bar" 
@@ -87,6 +88,18 @@ main{
   min-height: 100vh;
   padding: 25px;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.75));
+}
+main h2{
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
 }
 .search-box{
   width: 100%;
